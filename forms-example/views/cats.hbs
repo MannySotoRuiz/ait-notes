@@ -1,0 +1,40 @@
+these r the cats: 
+
+<form method="GET" action="/cats">
+		min lives: <input type="number" name="minLives" value="">	
+		<input type="submit" value="filter">	
+</form>
+
+{{#if error}}
+<h1>error! {{error}}</h1>
+{{/if}}
+<ul>
+{{#each cats}}
+<li>{{name}} : {{lives}}</li>
+{{/each}}
+</ul>
+
+<form method="POST" action="">
+	<div>name: <input type="text", name="catName"></div>
+	<div>lives: <input type="number", name="catLives"></div>
+	<div><input type="submit" value="add cat"></div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
